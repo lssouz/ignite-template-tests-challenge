@@ -1,9 +1,17 @@
-- [X] [POST] /users should be able to create new users
-- [X] [POST] /users should not be able to create new users when email is already token
-- [ ] [PATCH] /users/:user_id/admin should be able to turn an user as admin
-- [ ] [PATCH] /users/:user_id/admin should not be able to turn a non existing user as admin
-- [ ] [GET] /users/:user_id should be able to get user profile by ID
-- [ ] [GET] /users/:user_id should not be able to show profile of a non existing user
-- [ ] [GET] /users should be able to list all users
-- [ ] [GET] /users should not be able to a non admin user get list of all users
-- [ ] [GET] /users should not be able to a non existing user get list of all users
+### Requisitos
+- Deve ser possível criar umma conta
+- Deve ser possível buscar o extrato bancário do cliente
+- Deve ser possível realizar um depósito
+- Deve ser possível realizar um saque
+- Deve ser possível buscar o extrato bancário do cliente por data
+- Deve ser possível atualizar dados da conta do cliente
+- Deve ser possível obter dados da conta do cliente
+- Deve ser possível deletar uma conta
+
+### Regras de negócio
+- Não deve ser possível cadastrar uma conta com CPF já existente
+- Não deve ser possível fazer depósito em uma conta não existente
+- Não deve ser possível buscar extrato em uma conta não existente
+- Não deve ser possível fazer saque em uma conta não existente
+- Não deve ser possível excluir uma conta não existente
+- Não deve ser possível fazer saque quando o saldo for insuficiente

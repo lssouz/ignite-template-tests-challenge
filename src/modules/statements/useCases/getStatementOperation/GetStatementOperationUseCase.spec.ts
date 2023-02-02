@@ -25,7 +25,7 @@ interface IRequest {
   statement_id: string
 }
 
-describe("", () => {
+describe("Get Statement Operation", () => {
   beforeEach(() => {
     inMemoryStatementsRepository = new InMemoryStatementsRepository();
     inMemoryUsersRepository = new InMemoryUsersRepository();

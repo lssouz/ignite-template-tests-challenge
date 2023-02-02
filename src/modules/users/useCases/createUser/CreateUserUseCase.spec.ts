@@ -29,7 +29,7 @@ describe("Create User", () => {
         name: "Leonardo",
         password: "123456",
         email: "teste@testes.com"
-      }
+      };
 
       expect(async () => {
         await createUserUseCase.execute(user);
